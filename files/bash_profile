@@ -24,6 +24,7 @@ alias g++='g++ -std=c++11'
 alias cp='cp -i'
 alias mv='mv -i'
 alias ls='ls -G'
+alias sbl="source ~/.bash_login"
 
 PROMPT_COMMAND='printf "\033]0;%s\007" "local"'
 
