@@ -115,10 +115,10 @@ augroup FileTypeDetect
 augroup END
 
 " プラグインは明示的にOFF
-filetype plugin off
+filetype plugin on
 
 " indentは手動で設定するためOFF (プロジェクトのコーディングルールに則るため)
-filetype indent off
+filetype indent on
 
 " 括弧の対応をハイライト
 setlocal showmatch
