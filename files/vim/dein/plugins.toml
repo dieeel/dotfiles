@@ -24,7 +24,7 @@ on_source = ['previm']
 
 [[plugins]]
 repo = 'aklt/plantuml-syntax'
-on_ft = ['pu', 'uml']
+on_ft = ['pu', 'uml', 'md']
 hook_add = '''
     let g:plantuml_executable_script = "~/local/bin/plantuml"
 '''
