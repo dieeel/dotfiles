@@ -114,10 +114,10 @@ augroup FileTypeDetect
     autocmd BufNewFile,BufRead *.bash_login setfiletype sh
 augroup END
 
-" プラグインは明示的にOFF
+" プラグイン ON
 filetype plugin on
 
-" indentは手動で設定するためOFF (プロジェクトのコーディングルールに則るため)
+" indentは手動で設定するためOFF にすることも(プロジェクトのコーディングルールに則るため)
 filetype indent on
 
 " 括弧の対応をハイライト
