@@ -13,8 +13,10 @@ set shortmess+=I
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "バックアップを作成しない
 setlocal nobackup
+" swapを作らない
+setlocal noswapfile
 " swapを作るまでの時間m秒
-setlocal updatetime=0
+"setlocal updatetime=0
 
 " encode エンコード
 if has('win32')
@@ -162,6 +164,7 @@ augroup FileTypeIndent
     autocmd BufNewFile,BufRead *.bashrc setlocal tabstop=4  shiftwidth=0  softtabstop=0 autoindent  noexpandtab
     autocmd BufNewFile,BufRead *.bash_profile    setlocal tabstop=4  shiftwidth=0  softtabstop=0 autoindent  noexpandtab
     autocmd BufNewFile,BufRead *.bash_login      setlocal tabstop=4  shiftwidth=0  softtabstop=0 autoindent  noexpandtab
+    autocmd BufNewFile,BufRead *.yml    setlocal tabstop=2  shiftwidth=2  softtabstop=2 autoindent  expandtab
 augroup END
 
 " バックスペースキーで行頭やタブ等を削除する
