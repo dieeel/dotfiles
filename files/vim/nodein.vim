@@ -160,6 +160,7 @@ augroup FileTypeIndent
     autocmd BufNewFile,BufRead *.rb     setlocal tabstop<   shiftwidth=4  softtabstop=4 autoindent  expandtab
     autocmd BufNewFile,BufRead *.java   setlocal tabstop<   shiftwidth=4  softtabstop=4 autoindent  expandtab
     autocmd BufNewFile,BufRead *.md     setlocal tabstop<   shiftwidth=4  softtabstop=4 autoindent  expandtab
+    autocmd BufNewFile,BufRead *.rst    setlocal tabstop<   shiftwidth=3  softtabstop=3 autoindent  expandtab
     autocmd BufNewFile,BufRead *.vim    setlocal tabstop<   shiftwidth=4  softtabstop=4 autoindent  expandtab
     autocmd BufNewFile,BufRead *.bashrc setlocal tabstop=4  shiftwidth=0  softtabstop=0 autoindent  noexpandtab
     autocmd BufNewFile,BufRead *.bash_profile    setlocal tabstop=4  shiftwidth=0  softtabstop=0 autoindent  noexpandtab
@@ -196,6 +197,16 @@ nmap <C-C><C-G> :!git diff --  %<CR>
 "nnoremap gj j
 "nnoremap gk k
 
+" window移動
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+nnoremap <C-h> <C-W>h
+nnoremap <C-l> <C-W>l
+nnoremap <C-j> <C-W>j
+nnoremap <C-k> <C-W>k
+nnoremap <C-H> <C-W>H
+nnoremap <C-L> <C-W>L
+nnoremap <C-J> <C-W>J
+nnoremap <C-K> <C-W>K
 
 """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 " Tips
